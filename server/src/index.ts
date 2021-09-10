@@ -77,7 +77,7 @@ const main = async () => {
 
   await apolloServer.start()
 
-  apolloServer.applyMiddleware({ app }) // remove cors: false
+  apolloServer.applyMiddleware({ app }) // remove cors: false for it to work in apollo studio
 
   const PORT = process.env.PORT || 4000
 
